@@ -2,6 +2,8 @@ import React from "react";
 import { Layout, Menu } from "antd";
 import { useNavigate } from "react-router-dom";
 import menu from "../menu";
+import logo from "../../public/logocomfundo.jpeg";
+
 
 const { Sider, Content, Header, Footer } = Layout;
 
@@ -13,9 +15,9 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <Sider collapsible>
         <div style={{ textAlign: "center", margin: "16px" }}>
           <img
-            // src={logo}
-            alt="Logo"
-            style={{ width: "100%", maxWidth: "120px", height: "auto" }}
+            src={logo}
+            alt="MoneyMap"
+            style={{ width: "100%", maxWidth: "160px", height: "120px" }}
           />
         </div>
         <Menu theme="dark" mode="inline" onClick={({ key }) => navigate(key)}>
