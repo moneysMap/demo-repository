@@ -1,32 +1,37 @@
-import React from 'react';
-import { Card, Col, Row, Progress, Table } from 'antd';
-import { Bar, Pie, Line } from '@ant-design/charts';
-import { barConfig } from './configs/barConfig';
-import { pieConfig} from './configs/pieConfig';
-import { columns } from './configs/tableConfig'; 
-import { dataSource } from './configs/tableConfig';
+import React from "react";
+import { Card, Col, Row, Progress, Table } from "antd";
+import { Bar, Pie } from "@ant-design/charts";
+import { barConfig } from "./configs/barConfig";
+import { pieConfig } from "./configs/pieConfig";
+import { columns } from "./configs/tableConfig";
+import { dataSource } from "./configs/tableConfig";
 
 const DashboardPage: React.FC = () => {
-
   return (
     <div>
       <Row gutter={16}>
         <Col span={6}>
           <Card title="minha pica">
             <h2> xxxxxxx</h2>
-            <p>Semanal: <span style={{ color: 'green' }}>+12%</span></p>
+            <p>
+              Semanal: <span style={{ color: "green" }}>+12%</span>
+            </p>
           </Card>
         </Col>
         <Col span={6}>
           <Card title="GASTOU ">
             <h2>8,846</h2>
-            <p>Diário: <span style={{ color: 'green' }}>+11%</span></p>
+            <p>
+              Diário: <span style={{ color: "green" }}>+11%</span>
+            </p>
           </Card>
         </Col>
         <Col span={6}>
           <Card title="Recebidos">
             <h2>6,560</h2>
-            <p>Taxa: <span style={{ color: 'green' }}>60%</span></p>
+            <p>
+              Taxa: <span style={{ color: "green" }}>60%</span>
+            </p>
           </Card>
         </Col>
         <Col span={6}>
@@ -52,7 +57,11 @@ const DashboardPage: React.FC = () => {
       <Row gutter={16} style={{ marginTop: 16 }}>
         <Col span={24}>
           <Card title="Tabela">
-            <Table dataSource={dataSource} columns={columns} pagination={{ pageSize: 5 }} />
+            <Table
+              dataSource={dataSource}
+              columns={columns}
+              pagination={{ pageSize: 5 }}
+            />
           </Card>
         </Col>
       </Row>
