@@ -5,7 +5,7 @@ import {
   PlusCircleOutlined,
 } from "@ant-design/icons";
 import DashboardPage from "./pages/Dashboard/DashboardPage";
-import HomePage from "./pages/home/home-page/home-page";
+import HomePage from './pages/home/index';
 
 const menu = [
   {

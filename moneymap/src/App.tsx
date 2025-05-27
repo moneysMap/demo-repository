@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import DashboardPage from "./pages/Dashboard/DashboardPage";
-import HomePage from "./pages/home/home-page/home-page";
+import HomePage from "./pages/home/index";
 
 const App: React.FC = () => {
   return (
