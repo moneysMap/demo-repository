@@ -43,7 +43,7 @@ const DashboardPage: React.FC = () => {
           </Card>
         </Col>
         <Col span={12}>
-          <Card title="Distribuição de Categorias">
+          <Card title="Distribuição de Cksodniaf">
             <Pie {...pieConfig} />
           </Card>
         </Col>
