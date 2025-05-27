@@ -11,7 +11,7 @@ const DashboardPage: React.FC = () => {
     <div>
       <Row gutter={16}>
         <Col span={6}>
-          <Card title="minha pica">
+          <Card title="total guardado">
             <h2> xxxxxxx</h2>
             <p>
               Semanal: <span style={{ color: "green" }}>+12%</span>
@@ -19,7 +19,7 @@ const DashboardPage: React.FC = () => {
           </Card>
         </Col>
         <Col span={6}>
-          <Card title="GASTOU ">
+          <Card title="Gastos Totais">
             <h2>8,846</h2>
             <p>
               Diário: <span style={{ color: "green" }}>+11%</span>
@@ -48,7 +48,7 @@ const DashboardPage: React.FC = () => {
           </Card>
         </Col>
         <Col span={12}>
-          <Card title="Distribuição de Cksodniaf">
+          <Card title="Distribuição de Categorias">
             <Pie {...pieConfig} />
           </Card>
         </Col>
@@ -56,12 +56,8 @@ const DashboardPage: React.FC = () => {
 
       <Row gutter={16} style={{ marginTop: 16 }}>
         <Col span={24}>
-          <Card title="Tabela">
-            <Table
-              dataSource={dataSource}
-              columns={columns}
-              pagination={{ pageSize: 5 }}
-            />
+          <Card title="Tabela de Dados">
+            <Table dataSource={dataSource} columns={columns} pagination={{ pageSize: 5 }} />
           </Card>
         </Col>
       </Row>
