@@ -45,11 +45,26 @@ cd MoneyMap
 npm install
 ```
 
+A aplicação estará disponível em: [http://localhost:5173](http://localhost:5173)
+
+
 ### 3️⃣ Iniciar o Servidor de Desenvolvimento
 
 ```bash
 npm run dev
+
+## 🖥️ Backend (NestJS)
+
+### Rodando o backend
+
+```bash
+cd server
+npm install
+npm run start:dev
 ```
 
-A aplicação estará disponível em: [http://localhost:5173](http://localhost:5173)
+Acesse a documentação Swagger em: [http://localhost:3000/api](http://localhost:3000/api)
+
+
+
 
